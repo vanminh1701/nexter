@@ -26,7 +26,7 @@ body {
   font-weight: 600; }
 
 .heading-4 {
-  font-size: 1.3rem; }
+  font-size: 1.7rem; }
   .heading-4--light {
     color: #f9f7f6; }
   .heading-4--dark {
@@ -48,7 +48,7 @@ header {
 .features {
   grid-column: center-start / center-end;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-template-rows: auto auto;
   grid-gap: 6rem;
   align-items: start; }
@@ -56,7 +56,7 @@ header {
 .feature {
   display: grid;
   grid-template-columns: min-content 1fr;
-  grid-gap: 1.2rem 2.3rem; }
+  grid-gap: 1.5rem 2.5rem; }
   .feature__icon {
     fill: #c69963;
     height: 4.5rem;
