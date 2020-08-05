@@ -4,4 +4,33 @@
 
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
+
+  display: flex;
+  justify-content: center;
+
+  &__icon {
+    border: none;
+    border-radius: 0;
+
+    height: 2px;
+    width: 4.5rem;
+    background-color: $color-grey-light-1;
+    margin-top: 5rem;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 2px;
+      width: 4.5rem;
+      background-color: $color-grey-light-1;
+      display: block;
+    }
+
+    &::before {
+      transform: translateY(-10px);
+    }
+    &::after {
+      transform: translateY(8px);
+    }
+  }
 }
