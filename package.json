@@ -4,7 +4,7 @@
   "description": "Nexter webpage",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "watch": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server --port=1000 --ignore=node_modules/* --browser=firefox",
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
